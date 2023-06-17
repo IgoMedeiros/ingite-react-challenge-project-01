@@ -1,0 +1,38 @@
+.checkbox[type="checkbox"] {
+  width: 24px;
+  height: 21px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 999px;
+  border: 2px solid var(--blue);
+}
+
+.checkbox[type="checkbox"]:hover {
+  border-color: var(--blue-dark);
+}
+
+.checkbox[type="checkbox"]:checked {
+  border-color: var(--purple-dark);
+  background-color: var(--purple-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox[type="checkbox"]:checked::before {
+  content: url(../assets/checked_vector.svg);
+  color: var(--gray-100);
+  display: flex;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.checkbox[type="checkbox"]:checked:hover {
+  border-color: var(--purple);
+  background-color: var(--purple);
+}
+
+.checkbox[type="checkbox"]:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,20 @@
+.empty {
+  max-width: 736px;
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: var(--gray-300);
+  gap: 1rem;
+}
+
+.empty p {
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.empty p span {
+  font-weight: normal;
+}

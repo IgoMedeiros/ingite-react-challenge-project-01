@@ -1,0 +1,6 @@
+.addNewTask {
+  display: flex;
+  max-width: 736px;
+  margin: -27px auto 0;
+  gap: 0.5rem;
+}

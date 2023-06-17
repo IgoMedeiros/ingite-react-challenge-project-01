@@ -1,0 +1,15 @@
+.trash {
+  color: var(--gray-300);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trash:hover {
+  color: var(--danger);
+}

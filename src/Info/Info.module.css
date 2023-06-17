@@ -1,0 +1,22 @@
+.info {
+  display: flex;
+  width: 736px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-weight: 700;
+  justify-content: space-between;
+}
+.info p:first-child {
+  color: var(--blue);
+}
+
+.info p:last-child {
+  color: var(--purple);
+}
+
+.info p span {
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+  padding: 2px 8px;
+}

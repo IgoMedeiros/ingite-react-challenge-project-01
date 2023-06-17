@@ -1,0 +1,7 @@
+.tasks {
+  max-width: 736px;
+  margin: 4rem auto 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}

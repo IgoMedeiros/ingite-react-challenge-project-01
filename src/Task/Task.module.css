@@ -1,0 +1,26 @@
+.task {
+  width: 100%;
+  display: flex;
+  min-height: 72px;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.task + .task {
+  margin-top: 0.75rem;
+}
+
+.task p {
+  color: var(--gray-100);
+}
+
+.task p.done {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}

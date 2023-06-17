@@ -1,0 +1,21 @@
+.button {
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  height: 54px;
+}
+
+.button:hover {
+  background-color: var(--blue);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: none;
+}
