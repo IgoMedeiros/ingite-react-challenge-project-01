@@ -1,4 +1,4 @@
-.checkbox[type="checkbox"] {
+.checkbox[type='checkbox'] {
   width: 24px;
   height: 21px;
   cursor: pointer;
@@ -8,11 +8,11 @@
   border: 2px solid var(--blue);
 }
 
-.checkbox[type="checkbox"]:hover {
+.checkbox[type='checkbox']:hover {
   border-color: var(--blue-dark);
 }
 
-.checkbox[type="checkbox"]:checked {
+.checkbox[type='checkbox']:checked {
   border-color: var(--purple-dark);
   background-color: var(--purple-dark);
   display: flex;
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 
-.checkbox[type="checkbox"]:checked::before {
+.checkbox[type='checkbox']:checked::before {
   content: url(../assets/checked_vector.svg);
   color: var(--gray-100);
   display: flex;
@@ -28,11 +28,11 @@
   height: 0.75rem;
 }
 
-.checkbox[type="checkbox"]:checked:hover {
+.checkbox[type='checkbox']:checked:hover {
   border-color: var(--purple);
   background-color: var(--purple);
 }
 
-.checkbox[type="checkbox"]:focus {
+.checkbox[type='checkbox']:focus {
   box-shadow: none;
 }

@@ -1,5 +1,5 @@
-import { ClipboardText } from "@phosphor-icons/react";
-import styles from "./Empty.module.css";
+import { ClipboardText } from '@phosphor-icons/react'
+import styles from './Empty.module.css'
 
 export function Empty() {
   return (
@@ -11,5 +11,5 @@ export function Empty() {
         <span>Create a new task and organizer your items to do</span>
       </p>
     </div>
-  );
+  )
 }

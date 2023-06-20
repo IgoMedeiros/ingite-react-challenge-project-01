@@ -1,6 +1,6 @@
-import { Button } from "@src/components/Button";
-import { Input } from "@src/components/Input";
-import styles from "./AddNewTask.module.css";
+import { Button } from '@src/components/Button'
+import { Input } from '@src/components/Input'
+import styles from './AddNewTask.module.css'
 
 export function AddNewTask() {
   return (
@@ -8,5 +8,5 @@ export function AddNewTask() {
       <Input />
       <Button />
     </div>
-  );
+  )
 }

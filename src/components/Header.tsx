@@ -1,5 +1,5 @@
-import styles from "./Header.module.css";
-import rocket from "../assets/rocket.svg";
+import styles from './Header.module.css'
+import rocket from '../assets/rocket.svg'
 
 export function Header() {
   return (
@@ -12,5 +12,5 @@ export function Header() {
         </h1>
       </div>
     </div>
-  );
+  )
 }

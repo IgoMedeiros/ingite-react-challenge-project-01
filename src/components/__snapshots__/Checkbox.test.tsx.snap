@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Checkbox > should render 1`] = `
+<div>
+  <input
+    class="_checkbox_f7bd51"
+    type="checkbox"
+  />
+</div>
+`;

@@ -8,10 +8,11 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format:check": "prettier -c src/",
-    "format": "prettier -w src/",
+    "format:check": "prettier -c . --config prettierrc.json",
+    "format": "prettier -w . --config prettierrc.json",
     "prepare": "husky install",
-    "test": "vitest"
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.10",
@@ -26,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "@vitest/ui": "^0.32.2",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jest-dom": "^5.0.1",

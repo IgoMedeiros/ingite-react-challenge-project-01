@@ -1,4 +1,4 @@
-import styles from "./Info.module.css";
+import styles from './Info.module.css'
 
 export function Info() {
   return (
@@ -10,5 +10,5 @@ export function Info() {
         Tasks done <span>2 of 5</span>
       </p>
     </div>
-  );
+  )
 }
