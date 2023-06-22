@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+dist
+
+# Ignore all extensions files:
+*.json
+*.yaml
+*.md
+*.html
