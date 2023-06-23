@@ -1,7 +1,7 @@
 import './global.css'
 import { Header } from '@components/Header'
 import { AddNewTask } from './AddNewTask/AddNewTask'
-import { Info } from './Info/Info'
+import { Info, InfoProps } from './Info/Info'
 import { Task, TaskProps } from './Task/Task'
 import styles from './App.module.css'
 import { Empty } from './components/Empty'
@@ -9,13 +9,25 @@ import { useState } from 'react'
 
 function App() {
   const [tasks, setTasks] = useState<TaskProps[]>([])
+  const [infos, setInfos] = useState<InfoProps>({
+    openTasks: 0,
+    closeTasks: 0,
+  })
 
   const addTask = (task: TaskProps) => {
-    setTasks([...tasks, task])
+    setTasks((previous) => {
+      const newTaskList = [...previous, task]
+      summary(newTaskList)
+      return newTaskList
+    })
   }
 
   const removeTask = (id: string) => {
-    setTasks(tasks.filter((task) => task.id !== id))
+    setTasks((previous) => {
+      const newTaskList = previous.filter((task) => task.id !== id)
+      summary(newTaskList)
+      return newTaskList
+    })
   }
 
   const handleCheckTask = (taskChecked: TaskProps) => {
@@ -27,6 +39,21 @@ function App() {
       return task
     })
     setTasks(newTaskList)
+    summary(newTaskList)
+  }
+
+  const summary = (tasks: TaskProps[]) => {
+    const summary: InfoProps = tasks.reduce(
+      (acc, task) => {
+        acc.openTasks += 1
+        if (task.isCompleted) {
+          acc.closeTasks += 1
+        }
+        return acc
+      },
+      { openTasks: 0, closeTasks: 0 }
+    )
+    setInfos(summary)
   }
 
   return (
@@ -34,7 +61,7 @@ function App() {
       <Header />
       <AddNewTask addTask={addTask} />
       <div className={styles.tasks}>
-        <Info />
+        <Info {...infos} />
         {tasks.length <= 0 ? (
           <Empty />
         ) : (

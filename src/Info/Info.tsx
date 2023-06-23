@@ -1,13 +1,21 @@
 import styles from './Info.module.css'
 
-export function Info() {
+export type InfoProps = {
+  openTasks: number
+  closeTasks: number
+}
+
+export function Info(infoProps: InfoProps) {
   return (
     <div className={styles.info}>
-      <p>
-        Tasks opened <span>5</span>
+      <p data-testid="tasks-opened">
+        Tasks opened <span>{infoProps.openTasks}</span>
       </p>
-      <p>
-        Tasks done <span>2 of 5</span>
+      <p data-testid="tasks-closed">
+        Tasks done{' '}
+        <span>
+          {infoProps.closeTasks} of {infoProps.openTasks}
+        </span>
       </p>
     </div>
   )
