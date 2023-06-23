@@ -24,13 +24,15 @@ export function AddNewTask({
     setDescription('')
   }
 
+  const isButtonDisabled = () => description === ''
+
   return (
     <form onSubmit={handleSubmit} className={styles.addNewTask}>
       <Input
         onChange={(e) => setDescription(e.target.value)}
         value={description}
       />
-      <Button type="submit" />
+      <Button type="submit" disabled={isButtonDisabled()} />
     </form>
   )
 }

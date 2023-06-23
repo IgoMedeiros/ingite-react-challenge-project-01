@@ -4,6 +4,7 @@ import styles from './Button.module.css'
 type ButtonProps = {
   type: 'button' | 'submit'
   onClick?: () => void
+  disabled: boolean
 }
 export function Button(buttonProps: ButtonProps) {
   return (
@@ -11,6 +12,7 @@ export function Button(buttonProps: ButtonProps) {
       type={buttonProps.type}
       className={styles.button}
       onClick={buttonProps.onClick}
+      disabled={buttonProps.disabled}
     >
       Create <PlusCircle size={24} />
     </button>
