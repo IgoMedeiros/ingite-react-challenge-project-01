@@ -21,7 +21,7 @@
 }
 
 .checkbox[type='checkbox']:checked::before {
-  content: url(../assets/checked_vector.svg);
+  content: url(../../assets/checked_vector.svg);
   color: var(--gray-100);
   display: flex;
   width: 0.75rem;

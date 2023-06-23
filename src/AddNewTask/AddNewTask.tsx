@@ -1,5 +1,5 @@
-import { Button } from '@src/components/Button'
-import { Input } from '@src/components/Input'
+import { Button } from '@src/components/Button/Button'
+import { Input } from '@src/components/Input/Input'
 import styles from './AddNewTask.module.css'
 import { FormEvent, useState } from 'react'
 import { TaskProps } from '@src/Task/Task'

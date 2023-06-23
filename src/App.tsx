@@ -1,10 +1,10 @@
 import './global.css'
-import { Header } from '@components/Header'
+import { Header } from '@components/Header/Header'
 import { AddNewTask } from './AddNewTask/AddNewTask'
 import { Info, InfoProps } from './Info/Info'
 import { Task, TaskProps } from './Task/Task'
 import styles from './App.module.css'
-import { Empty } from './components/Empty'
+import { Empty } from '@components/Empty/Empty'
 import { useState } from 'react'
 
 function App() {

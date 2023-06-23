@@ -1,6 +1,6 @@
-import { TrashButton } from '@src/components/TrashButton'
+import { TrashButton } from '@src/components/TrashButton/TrashButton'
 import styles from './Task.module.css'
-import { Checkbox } from '@src/components/Checkbox'
+import { Checkbox } from '@src/components/Checkbox/Checkbox'
 
 export type TaskProps = {
   id: string

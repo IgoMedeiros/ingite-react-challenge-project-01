@@ -3,7 +3,7 @@
 exports[`Checkbox > should render 1`] = `
 <div>
   <input
-    class="_checkbox_f7bd51"
+    class="_checkbox_399c3c"
     type="checkbox"
   />
 </div>
